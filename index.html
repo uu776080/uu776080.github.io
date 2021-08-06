@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif, serif;
+  font-size: 1.3rem;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #eee;
+  border-bottom: solid 1px #aaa;
+  opacity1: 0.85;
+  z-index: 99;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#navbar ul {
+  float: right;
+}
+#navbar li {
+  border-left: solid 1px #aaa;
+}
+li {
+  float: left;
+  
+}
+#navbar li:first-of-type {
+  border-left: none;
+}
+#navbar a {
+  display: block;
+  padding: 10px 20px;
+  color: #000;
+  display: block;
+}
+#navbar a:hover {
+  background-color: #444;
+  color: #eee;
+  text-shadow: 0px 1px 8px #3ff;
+}
+a {
+  text-decoration: none;
+
+}
+div.wrap1 {
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 100%;
+}
+section, figcaption {
+  color: #eee;
+}
+#welcome-section, #projects, #contacts {
+  padding-top: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#welcome-section {
+  min-height: 100vh;
+  background-color: #066;
+}
+#welcome-section a {
+  color: #eee;
+}
+h1 {
+  margin-bottom: 40px;
+  font-size: 2.2em;
+  text-shadow: 1px 1px 3px #111;
+}
+#welcome-section li {
+  display: block;
+  float: none;
+  line-height: 1.5;
+}
+#projects {
+  background-color: #057;
+  min-height: 100vh;
+}
+#proj-cont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+figure {
+  margin: 0;
+}
+figcaption {
+  margin-bottom: 4px;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+.project-tile {
+  border: solid 1px;
+  width: 400px;
+  height: auto;
+  margin-bottom: 50px;
+  background-color: #033;
+  box-shadow: 0px 1px 8px #3ff;
+  opacity: 0.7;
+  max-width: 100%;
+
+}
+.project-tile, img {
+  border-radius: 2px;
+}
+.project-tile:hover {
+  opacity: 1;
+  box-shadow: 0px 1px 19px #3ff;
+}
+#contacts {
+  height: 96vh;
+  background-color: #236;
+}
+#cont-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#profile-link {
+  color: #aee;
+  font-size: 1.5em;
+}
+#profile-link:hover{
+  color: #aea;
+  text-shadow: 0px 1px 8px #3ff;
+}
+footer {
+  border-top: solid 3px #ccc;
+  height: 4vh;
+  background-color: #eee;
+}
+footer p {
+  padding: 10px 10px;
+  float: right;
+  margin: 0;
+}
+footer a {
+  display: inline;
+}
+@media (max-width: 799px) {
+  #proj-cont {
+  flex-direction: column;
+  align-items: center;
+  }
+  #cont-list {
+  flex-direction: column;
+  align-items: center;
+  }
+}
+</style>
+</head>
+<body>
+<nav id="navbar">
+  <ul>
+    <li><a href="#welcome-section">About</a></li>
+    <li><a href="#projects">Work</a></li>
+    <li><a href="#footer">Contact</a></li>
+  </ul>
+</nav>
+<section id="welcome-section">
+  <div class="wrap1">
+  <h1>I am Aleksey</h1>
+  <ul>
+  <li>HTML5 and CSS3 developer (self-taught with 
+  <a href="https://www.freecodecamp.org/certification/fcc85e48dde-88e5-4af8-bcba-c728c2a1f2ae/responsive-web-design">freeCodeCamp
+  </a> and w3schools)</li>
+  <li>Prefer to use open-source software including unix-like operating system</li>
+  <li>English isn't my first language</li>
+  </ul>
+  </div>
+</section>
+<section id="projects">
+  <div class="wrap1">
+  <h1>My projects</h1>
+  <div id="proj-cont">
+    <a class="project-tile" href="https://codepen.io/uu776080/full/jOmaQLW" target="_blank">
+      <figure>
+        <img src="https://assets.codepen.io/6581310/internal/screenshots/pens/jOmaQLW.default.png" alt="">
+        <figcaption>Technical Documentation Page</figcaption>
+      </figure>
+    </a>
+    <a class="project-tile" href="https://codepen.io/uu776080/full/zYwzjaq" target="_blank">
+      <figure>
+        <img src="https://assets.codepen.io/6581310/internal/screenshots/pens/zYwzjaq.default.png" alt="">
+        <figcaption>Product Landing Page</figcaption>
+      </figure>
+    </a>
+    <a class="project-tile" href="https://codepen.io/uu776080/full/ExmWgov" target="_blank">
+      <figure>
+        <img src="https://assets.codepen.io/6581310/internal/screenshots/pens/ExmWgov.default.png" alt="">
+        <figcaption>Survey Form</figcaption>
+      </figure>
+    </a>
+    <a class="project-tile" href="https://codepen.io/uu776080/full/abWBVmZ" target="_blank">
+      <figure>
+        <img src="https://assets.codepen.io/6581310/internal/screenshots/pens/abWBVmZ.default.png" alt="">
+        <figcaption>Tribute Page</figcaption>
+      </figure>
+    </a>
+  </div>
+  </div>
+</section>
+<section id="contacts">
+  <div class="wrap1">
+  <h1>Contacts</h1>
+  <div id="cont-list">
+    <a href="https://github.com/uu776080" id="profile-link" target="_blank">github</a>
+    <a href="https://www.freecodecamp.org/fcc85e48dde-88e5-4af8-bcba-c728c2a1f2ae" id="profile-link" target="_blank">freecodecamp</a>
+    
+    <a href="mailto:uu776080@gmail.com" id="profile-link">email</a>
+  </div>
+  </div>
+</section>
+<footer id="footer">
+  <p>© Created for <a href="https://www.freecodecamp.com/">freeCodeCamp</a></p>
+</footer>
+</body>
+</html>
