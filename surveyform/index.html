@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  color: #000;
+  line-height: 1.5;
+  font-size: 18px;
+  font-family: arial, sans-serif;
+  background-color: #f3f3f3;
+  background-image: linear-gradient(45deg, #fff, #999);
+  
+}
+header {
+  text-shadow: 2px 1px 9px #fff;
+}
+#survey-form {
+  max-width: 600px;
+  text-align: left;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  padding: 30px 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  box-shadow: 0 5px 10px 0px #999;
+}
+div.singleform {
+  margin-bottom: 25px;
+}
+select, input, button, textarea {
+  font-size: 18px;
+  padding: 5px;
+  border: none;
+  background-color: #fff;
+}
+label, p {
+  margin-bottom: 5px;
+  display: block;
+}
+input {
+  margin-left: 0;
+  margin-right: 8px;
+  
+}
+input[type=radio], input[type=checkbox] {
+  min-height: 16px;
+  min-width: 16px;
+}
+input[type=text]:focus, input[type=email]:focus, input[type=number]:focus, select:focus, input:focus {
+  background-color: #dff;
+  border: none;
+}
+span {
+  font-size: 15px;
+}
+#name, #email, #number, #dropdown, #comment, #submit {
+  width: 100%;
+}
+textarea {
+  min-height: 8em;
+  resize: vertical;
+}
+#submit {
+  background-color: #6f6;
+  padding: 5px;
+  border: none;
+  
+}
+#submit:hover {
+  background-color: #4f4;
+  text-shadow: 2px 2px 9px #fff;
+}
+
+
+</style>
+</head>
+<body>
+<header>
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+</header>
+<main>
+  <form id="survey-form">
+  <div class="singleform">
+    <label id="name-label" for="name" >Name</label>
+    <input id="name" type="text" placeholder="Enter your name" required>
+  </div>
+  <div class="singleform">
+    <label for="email" id="email-label">Email</label>
+    <input id="email" type="email" placeholder="Enter your email" required>
+    
+  </div>
+  <div class="singleform">
+    <label for="number" id="number-label">Age <span>(optional)</span></label>
+    <input id="number" type="number" placeholder="Age" min="1" max="110">
+   
+  </div>
+  <div class="singleform">
+    <p>Which option best describes your current role?</p>
+    <select id="dropdown" name="role" required>
+      <option disabled selected value>Select current role</option>
+      <option value="student">Student</option>
+      <option value="job">Full Time Job</option>
+      <option value="learner">Full Time Learner</option>
+      <option value="prefernot">Prefer not to say</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+  <div class="singleform">
+    <p>Would you recommend freeCodeCamp to a friend?</p>
+    <label><input type="radio" name="recom" value="definitely">Definitely</label>
+    <label><input type="radio" name="recom" value="maybe">Maybe</label>    
+    <label><input type="radio" name="recom" value="notsure">Not sure</label>
+  </div>
+  <div class="singleform">
+    <p>What is your favorite feature of freeCodeCamp?</p>
+    <select id="dropdown" name="fav_feature" required>
+      <option disabled selected value>Select an option</option>
+      <option value="challenges">Challenges</option>
+      <option value="projects">Projects</option>
+      <option value="community">Communty</option>
+      <option value="opensource">Open Source</option>
+    </select>
+  </div>
+  <div class="singleform">    
+    <p>What would you like to see improved? <span>(Check all that apply)</span></p>
+    <label><input type="checkbox" name="improve" value="frntend">Front-end Projects</label>
+    <label><input type="checkbox" name="improve" value="bckend">Back-end Projects</label>
+    <label><input type="checkbox" name="improve" value="datavisual">Data Visualization</label>
+    <label><input type="checkbox" name="improve" value="challenges">Challenges</label>
+    <label><input type="checkbox" name="improve" value="osc">Open Source Community</label>
+    <label><input type="checkbox" name="improve" value="gitter">Gitter help rooms</label>
+    <label><input type="checkbox" name="improve" value="videos">Videos</label>
+    <label><input type="checkbox" name="improve" value="citymeetups">City Meetups</label>
+    <label><input type="checkbox" name="improve" value="wiki">Wiki</label>
+    <label><input type="checkbox" name="improve" value="forum">Forum</label>
+    <label><input type="checkbox" name="improve" value="additionalcourses">Additional Courses</label>
+  </div>
+  <div class="singleform">
+    <p>Any comments or suggestions?</p>
+    <textarea id="comment" name="comment" placeholder="Enter your comment here..." rows="7" ></textarea>
+  </div>
+  <div class="singleform">
+    <button id="submit" type="submit" >Submit</button>
+  </div>
+  </form>
+<footer><br></footer>
+</main>
+</body>
+</html>
