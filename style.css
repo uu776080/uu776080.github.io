@@ -58,7 +58,7 @@ div.wrap1 {
 section, figcaption {
   color: #eee;
 }
-#welcome-section, #projects, #contacts {
+#welcome-section, #projects, #contacts, #certs {
   padding-top: 30px;
   text-align: center;
   display: flex;
@@ -86,6 +86,10 @@ h1 {
 #projects {
   background-color: #057;
   min-height: 100vh;
+}
+#certs {
+  min-height: 100vh;
+  background-color: #077;
 }
 #proj-cont {
   display: flex;
