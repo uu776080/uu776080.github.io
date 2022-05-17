@@ -36,7 +36,7 @@ li {
 }
 #navbar a {
   display: block;
-  padding: 5px 10px;
+  padding: 10px 20px;
   color: #000;
   display: block;
 }
@@ -156,6 +156,9 @@ footer a {
   display: inline;
 }
 @media (max-width: 799px) {
+  body {
+    font-size: 1rem;
+  }
   #proj-cont {
   flex-direction: column;
   align-items: center;
