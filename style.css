@@ -14,7 +14,7 @@ body {
   background-color: #eee;
   border-bottom: solid 1px #aaa;
   opacity1: 0.85;
-  z-index: 99;
+  z-index: 2;
 }
 ul {
   list-style-type: none;
@@ -29,7 +29,6 @@ ul {
 }
 li {
   float: left;
-  
 }
 #navbar li:first-of-type {
   border-left: none;
@@ -47,7 +46,22 @@ li {
 }
 a {
   text-decoration: none;
-
+}
+.drop-btn {
+  position: relative;
+  display: inline-block;
+}
+.drop-con {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  background-color: #eee;
+}
+div.drop-con a {
+  display: block;
+}
+.drop-btn:hover .drop-con {
+  display: block;
 }
 div.wrap1 {
   width: 900px;
@@ -85,6 +99,11 @@ h1 {
 }
 #projects {
   background-color: #057;
+  min-height: 100vh;
+}
+#jscript {
+  background-color: #046;
+  padding-top: 50px;
   min-height: 100vh;
 }
 #certs {
